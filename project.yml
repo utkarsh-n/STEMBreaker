@@ -1,0 +1,97 @@
+name: STEMBreaker
+options:
+  bundleIdPrefix: com.utkarsh
+  deploymentTarget:
+    iOS: '26.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '1'
+targets:
+  StemCore:
+    type: framework
+    platform: iOS
+    sources: [Sources/StemCore]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.stembreaker.core
+  STEMBreaker:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes: ['Separation/Models', 'Demo', 'Info.plist']
+      - path: App/Separation/Models/Spleeter2Model.mlmodelc
+        type: folder
+        buildPhase: resources
+      - path: App/Demo
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: StemCore
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: STEM breaker
+        UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSAppleMusicUsageDescription: STEM breaker reads your music library and current song so you can browse and control Apple Music playback.
+        NSMicrophoneUsageDescription: Turn on microphone visualization to see the sound around your iPhone. Audio is analyzed on your device and is not recorded or uploaded.
+        NSScreenCaptureUsageDescription: Visualize live device audio without the microphone, including when using Bluetooth headphones. Only audio levels are analyzed on your iPhone; screen images and audio are not saved or uploaded.
+        UIBackgroundModes: [audio, screen-capture]
+        ITSAppUsesNonExemptEncryption: false
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.stembreaker
+        TARGETED_DEVICE_FAMILY: '1'
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  StemCoreTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests/StemCoreTests]
+    dependencies: [{target: StemCore}]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.stembreaker.coretests
+  STEMBreakerUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies: [{target: STEMBreaker}]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.stembreaker.uitests
+        TEST_TARGET_NAME: STEMBreaker
+  AudioIntegrationTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests/AudioIntegrationTests]
+    dependencies: [{target: STEMBreaker}, {target: StemCore}]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.stembreaker.audiotests
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/STEMBreaker.app/STEMBreaker
+        BUNDLE_LOADER: $(TEST_HOST)
+schemes:
+  STEMBreaker:
+    build:
+      targets:
+        STEMBreaker: all
+        StemCoreTests: [test]
+        AudioIntegrationTests: [test]
+        STEMBreakerUITests: [test]
+    test:
+      targets: [StemCoreTests, AudioIntegrationTests, STEMBreakerUITests]

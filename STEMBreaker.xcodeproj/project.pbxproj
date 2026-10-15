@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FE4CCF4D924011320A1E6B6 /* DemoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D50C0A68F54A76D3A54E3 /* DemoLoader.swift */; };
+		0FF9F70BF9D40CAB4DA666DE /* StemCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1410B096F5B3FBEB6AFE4C74 /* StemCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; };
+		2604F7846D99666A3FD9D52B /* StemCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; };
+		2925D13979C1CB4F54FB9278 /* MicrophoneSampleMailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB1EFECB2961629DE3AAA6 /* MicrophoneSampleMailboxTests.swift */; };
+		3382655685C9BFF13DCAF8EE /* StemCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB159692D5566409A8F6EF60 /* StemCoreTests.swift */; };
+		39C9D60A239B60503F74E86B /* AudioSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1B4D01F64C8EF5ED6CBA5 /* AudioSpectrum.swift */; };
+		489AA0905A05188A25638F11 /* SpleeterSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3998CFE0B0C77DBBC17A93AB /* SpleeterSeparator.swift */; };
+		4B046291D2559C66DA8AB1AC /* StemCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; };
+		4CCB6C2895A5D289E8E40C82 /* DeckStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BDDF50D68BB71833D39DD8 /* DeckStore.swift */; };
+		59535268F1FD9ABCAF8C3811 /* MusicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D755123490E1C6D84D6C18F8 /* MusicLibraryView.swift */; };
+		5CCE715D7CAE27007ED11E1F /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556AEE550AB865BC0F6DFC1 /* GuideView.swift */; };
+		678291F4816685F839DDB34F /* StemCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FD237313414187B093F273A /* InstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474B15B9D12588E1C2626F71 /* InstrumentView.swift */; };
+		71F088DE4E6DF244061ED07D /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8344525DF610FC09B1D45B1 /* TransportView.swift */; };
+		738C3FDB696DDF489B00FB73 /* AudioSpectrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361893777E67BB31B46E28D /* AudioSpectrumTests.swift */; };
+		887CEBFFE968BF2FEE1F4E98 /* ShortTimeFourier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6BC57363B0EAC887D89F6 /* ShortTimeFourier.swift */; };
+		897ECBECBD1C9D1B6258F1C7 /* AudioImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A468E06E22E6D7F6FE11121 /* AudioImporter.swift */; };
+		8AA1656127DE76D5F6521DD3 /* STEMBreakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238F7A30F5AE6DE04F05B5BC /* STEMBreakerApp.swift */; };
+		90F25E958381A39075BE552A /* AudioIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78969AD5F94EDDC7DB63D8B0 /* AudioIntegrationTests.swift */; };
+		93A315A0789420F9B2C9C8F2 /* ScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E65C75E9D2F8180C4E918 /* ScopeView.swift */; };
+		977F7FDADF1F0A52A4E8A085 /* MicrophoneAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33E6B55FC62DA3703E802B /* MicrophoneAnalyzer.swift */; };
+		A0096BDE08ECED59E5D768F7 /* Spleeter-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6FC5041E67EF40C35BD43 /* Spleeter-LICENSE.txt */; };
+		A683B18A304CA4BB5E607972 /* StemMixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3402282DB7BFC7A642A49F6 /* StemMixerView.swift */; };
+		A8432B5B97BD0782140239B4 /* VisualizationHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D873F53EF67E0B0D001AC /* VisualizationHistoryTests.swift */; };
+		AF5A438C030513FF1B32B4B2 /* Demo in Resources */ = {isa = PBXBuildFile; fileRef = D63B79A92A7C0F7DA2538A18 /* Demo */; };
+		B02EA749BA2AD9C0B22F95C7 /* DemoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9CE1ABBDD1B1F460C3F408 /* DemoFactory.swift */; };
+		BC74B14BE20C887AB057C5D0 /* SystemOutputAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258878C0940B3CB86B05D332 /* SystemOutputAnalyzer.swift */; };
+		C28054802489AAFFE07BD55B /* InstrumentTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB826617B001E8B2E57A45B4 /* InstrumentTheme.swift */; };
+		C68FB90A8DE9ED1BC16B17B5 /* InstrumentEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8683265519DAE836F52302AF /* InstrumentEstimator.swift */; };
+		CA0F455AA804702521791DB0 /* SystemOutputAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD3322236FA86EFE488855 /* SystemOutputAnalyzerTests.swift */; };
+		CD90BD2914E76E14856BE72B /* MODEL.md in Resources */ = {isa = PBXBuildFile; fileRef = 70B26F7859A8816DF6D10942 /* MODEL.md */; };
+		D7A0A2E8E13AEECA8A56DC8B /* STEMBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A15C7E4DA387D931848BBF /* STEMBreakerUITests.swift */; };
+		DA44AD8BAA092C8D554B63D2 /* AppleMusicBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A06CF0A339C4CFC938FD5 /* AppleMusicBridge.swift */; };
+		E25DECDE10210821D6342852 /* StemCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E79896FF9BAD0E8A8C006F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BA8CCA2A916464165F5F5E /* Assets.xcassets */; };
+		ED4B5F009605EC40532CBCA7 /* Spleeter2Model.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = A4143E969BBD008DC6D4C8CF /* Spleeter2Model.mlmodelc */; };
+		ED6D0B6F3224E5C605DC51C2 /* StemSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30548114FAF7916B367DE4C /* StemSession.swift */; };
+		F773D38BF2685E0E94148FC7 /* RemixEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A2C8CA60C35419E1BEC50 /* RemixEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		136FD199CFDAE5D512160FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E2473BDAA89E5BAD331A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D636DFE3D596ECCB941689;
+			remoteInfo = STEMBreaker;
+		};
+		24E619B2E1D3A85B35835853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E2473BDAA89E5BAD331A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9329CB791D1882EB841B7AB7;
+			remoteInfo = StemCore;
+		};
+		2578691F9AE5AF6A8555C319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E2473BDAA89E5BAD331A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9329CB791D1882EB841B7AB7;
+			remoteInfo = StemCore;
+		};
+		960C0F28F974AA3AA072EB76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E2473BDAA89E5BAD331A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D636DFE3D596ECCB941689;
+			remoteInfo = STEMBreaker;
+		};
+		C26D2A03F9546005626FC449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E2473BDAA89E5BAD331A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9329CB791D1882EB841B7AB7;
+			remoteInfo = StemCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E9459216557484BC1A83B55 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E25DECDE10210821D6342852 /* StemCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF5E20BD72E5D4FC2B0C420 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				678291F4816685F839DDB34F /* StemCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3794A21DCC6CB3CF926CDFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0FF9F70BF9D40CAB4DA666DE /* StemCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E225F78002D1C969D11FEBD /* STEMBreaker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = STEMBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FA2F1CF2F0F947933DDD60 /* StemCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StemCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BDDF50D68BB71833D39DD8 /* DeckStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckStore.swift; sourceTree = "<group>"; };
+		19963F5FF7E9461F6CE1596E /* StemCoreTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StemCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		238F7A30F5AE6DE04F05B5BC /* STEMBreakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEMBreakerApp.swift; sourceTree = "<group>"; };
+		258878C0940B3CB86B05D332 /* SystemOutputAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemOutputAnalyzer.swift; sourceTree = "<group>"; };
+		3998CFE0B0C77DBBC17A93AB /* SpleeterSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpleeterSeparator.swift; sourceTree = "<group>"; };
+		3D33E6B55FC62DA3703E802B /* MicrophoneAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneAnalyzer.swift; sourceTree = "<group>"; };
+		3FB6FC5041E67EF40C35BD43 /* Spleeter-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Spleeter-LICENSE.txt"; sourceTree = "<group>"; };
+		44A1B4D01F64C8EF5ED6CBA5 /* AudioSpectrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrum.swift; sourceTree = "<group>"; };
+		46BA8CCA2A916464165F5F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		474B15B9D12588E1C2626F71 /* InstrumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentView.swift; sourceTree = "<group>"; };
+		5A468E06E22E6D7F6FE11121 /* AudioImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioImporter.swift; sourceTree = "<group>"; };
+		6EBD3322236FA86EFE488855 /* SystemOutputAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemOutputAnalyzerTests.swift; sourceTree = "<group>"; };
+		70B26F7859A8816DF6D10942 /* MODEL.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MODEL.md; sourceTree = "<group>"; };
+		7556AEE550AB865BC0F6DFC1 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		78969AD5F94EDDC7DB63D8B0 /* AudioIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioIntegrationTests.swift; sourceTree = "<group>"; };
+		8683265519DAE836F52302AF /* InstrumentEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentEstimator.swift; sourceTree = "<group>"; };
+		8A5D873F53EF67E0B0D001AC /* VisualizationHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationHistoryTests.swift; sourceTree = "<group>"; };
+		8B8D50C0A68F54A76D3A54E3 /* DemoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLoader.swift; sourceTree = "<group>"; };
+		9361893777E67BB31B46E28D /* AudioSpectrumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrumTests.swift; sourceTree = "<group>"; };
+		A3402282DB7BFC7A642A49F6 /* StemMixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemMixerView.swift; sourceTree = "<group>"; };
+		A4143E969BBD008DC6D4C8CF /* Spleeter2Model.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Spleeter2Model.mlmodelc; path = App/Separation/Models/Spleeter2Model.mlmodelc; sourceTree = SOURCE_ROOT; };
+		AB159692D5566409A8F6EF60 /* StemCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemCoreTests.swift; sourceTree = "<group>"; };
+		B00A2C8CA60C35419E1BEC50 /* RemixEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemixEngine.swift; sourceTree = "<group>"; };
+		D4CB1EFECB2961629DE3AAA6 /* MicrophoneSampleMailboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneSampleMailboxTests.swift; sourceTree = "<group>"; };
+		D63B79A92A7C0F7DA2538A18 /* Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Demo; path = App/Demo; sourceTree = SOURCE_ROOT; };
+		D755123490E1C6D84D6C18F8 /* MusicLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryView.swift; sourceTree = "<group>"; };
+		D8344525DF610FC09B1D45B1 /* TransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportView.swift; sourceTree = "<group>"; };
+		D8A15C7E4DA387D931848BBF /* STEMBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEMBreakerUITests.swift; sourceTree = "<group>"; };
+		DB826617B001E8B2E57A45B4 /* InstrumentTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentTheme.swift; sourceTree = "<group>"; };
+		E57A06CF0A339C4CFC938FD5 /* AppleMusicBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicBridge.swift; sourceTree = "<group>"; };
+		E64E65C75E9D2F8180C4E918 /* ScopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeView.swift; sourceTree = "<group>"; };
+		EEADB1726655D92462D544FD /* AudioIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AudioIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30548114FAF7916B367DE4C /* StemSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemSession.swift; sourceTree = "<group>"; };
+		F57746422AB824EE2CAA986D /* STEMBreakerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = STEMBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF6BC57363B0EAC887D89F6 /* ShortTimeFourier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTimeFourier.swift; sourceTree = "<group>"; };
+		FD9CE1ABBDD1B1F460C3F408 /* DemoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1317A86915E30145C1C0B23F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B046291D2559C66DA8AB1AC /* StemCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D699DD6E87E16D5CC37F586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410B096F5B3FBEB6AFE4C74 /* StemCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1AE5536404991566645F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2604F7846D99666A3FD9D52B /* StemCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2379426D67F7F13C35F9B0B4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4151E6DB1535A6EA94ADBAC9 /* StemCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3A0BE35EB6BDD77ED828EC00 /* AudioIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				78969AD5F94EDDC7DB63D8B0 /* AudioIntegrationTests.swift */,
+				9361893777E67BB31B46E28D /* AudioSpectrumTests.swift */,
+				D4CB1EFECB2961629DE3AAA6 /* MicrophoneSampleMailboxTests.swift */,
+				6EBD3322236FA86EFE488855 /* SystemOutputAnalyzerTests.swift */,
+				8A5D873F53EF67E0B0D001AC /* VisualizationHistoryTests.swift */,
+			);
+			path = AudioIntegrationTests;
+			sourceTree = "<group>";
+		};
+		40E0C93F8685F277CA0762AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7556AEE550AB865BC0F6DFC1 /* GuideView.swift */,
+				474B15B9D12588E1C2626F71 /* InstrumentView.swift */,
+				D755123490E1C6D84D6C18F8 /* MusicLibraryView.swift */,
+				E64E65C75E9D2F8180C4E918 /* ScopeView.swift */,
+				A3402282DB7BFC7A642A49F6 /* StemMixerView.swift */,
+				D8344525DF610FC09B1D45B1 /* TransportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4151E6DB1535A6EA94ADBAC9 /* StemCore */ = {
+			isa = PBXGroup;
+			children = (
+				FD9CE1ABBDD1B1F460C3F408 /* DemoFactory.swift */,
+				8683265519DAE836F52302AF /* InstrumentEstimator.swift */,
+				FBF6BC57363B0EAC887D89F6 /* ShortTimeFourier.swift */,
+				F30548114FAF7916B367DE4C /* StemSession.swift */,
+			);
+			path = StemCore;
+			sourceTree = "<group>";
+		};
+		417441BE89A7F09EE6666BAA = {
+			isa = PBXGroup;
+			children = (
+				DD4793EF5F280E468BBBC6C8 /* App */,
+				2379426D67F7F13C35F9B0B4 /* Sources */,
+				6FF3A26B6FC75B4BF973BA5B /* Tests */,
+				78279C343C4BB6CF3A427CD6 /* UITests */,
+				D421FC863B1ED825DA27751B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D8F31D246F20B90463CCD7B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				44A1B4D01F64C8EF5ED6CBA5 /* AudioSpectrum.swift */,
+				3D33E6B55FC62DA3703E802B /* MicrophoneAnalyzer.swift */,
+				B00A2C8CA60C35419E1BEC50 /* RemixEngine.swift */,
+				258878C0940B3CB86B05D332 /* SystemOutputAnalyzer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6FF3A26B6FC75B4BF973BA5B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3A0BE35EB6BDD77ED828EC00 /* AudioIntegrationTests */,
+				BDBE7DAAE8860C7E5047B264 /* StemCoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		78279C343C4BB6CF3A427CD6 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A15C7E4DA387D931848BBF /* STEMBreakerUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		79514250D4FBE23D201FDF9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4143E969BBD008DC6D4C8CF /* Spleeter2Model.mlmodelc */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A71AC9CE3984EEECD6CB1E3 /* Separation */ = {
+			isa = PBXGroup;
+			children = (
+				5A468E06E22E6D7F6FE11121 /* AudioImporter.swift */,
+				70B26F7859A8816DF6D10942 /* MODEL.md */,
+				3FB6FC5041E67EF40C35BD43 /* Spleeter-LICENSE.txt */,
+				3998CFE0B0C77DBBC17A93AB /* SpleeterSeparator.swift */,
+				79514250D4FBE23D201FDF9F /* Models */,
+			);
+			path = Separation;
+			sourceTree = "<group>";
+		};
+		BDBE7DAAE8860C7E5047B264 /* StemCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB159692D5566409A8F6EF60 /* StemCoreTests.swift */,
+			);
+			path = StemCoreTests;
+			sourceTree = "<group>";
+		};
+		D421FC863B1ED825DA27751B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEADB1726655D92462D544FD /* AudioIntegrationTests.xctest */,
+				0E225F78002D1C969D11FEBD /* STEMBreaker.app */,
+				F57746422AB824EE2CAA986D /* STEMBreakerUITests.xctest */,
+				13FA2F1CF2F0F947933DDD60 /* StemCore.framework */,
+				19963F5FF7E9461F6CE1596E /* StemCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4793EF5F280E468BBBC6C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				46BA8CCA2A916464165F5F5E /* Assets.xcassets */,
+				17BDDF50D68BB71833D39DD8 /* DeckStore.swift */,
+				D63B79A92A7C0F7DA2538A18 /* Demo */,
+				8B8D50C0A68F54A76D3A54E3 /* DemoLoader.swift */,
+				DB826617B001E8B2E57A45B4 /* InstrumentTheme.swift */,
+				238F7A30F5AE6DE04F05B5BC /* STEMBreakerApp.swift */,
+				4D8F31D246F20B90463CCD7B /* Audio */,
+				F77B92C97E3B4046CBC239C2 /* Music */,
+				8A71AC9CE3984EEECD6CB1E3 /* Separation */,
+				40E0C93F8685F277CA0762AE /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F77B92C97E3B4046CBC239C2 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E57A06CF0A339C4CFC938FD5 /* AppleMusicBridge.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61B88741EC1811AD275E2C73 /* STEMBreakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6021C8FD498B5A232A3B049A /* Build configuration list for PBXNativeTarget "STEMBreakerUITests" */;
+			buildPhases = (
+				BF0299AC69C9C06B1851FEF7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C2020DC34A22169754999E /* PBXTargetDependency */,
+			);
+			name = STEMBreakerUITests;
+			packageProductDependencies = (
+			);
+			productName = STEMBreakerUITests;
+			productReference = F57746422AB824EE2CAA986D /* STEMBreakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9329CB791D1882EB841B7AB7 /* StemCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B92FF0118ACCC72027A9163 /* Build configuration list for PBXNativeTarget "StemCore" */;
+			buildPhases = (
+				2E5581A8FCA1DB06E2FF7E32 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StemCore;
+			packageProductDependencies = (
+			);
+			productName = StemCore;
+			productReference = 13FA2F1CF2F0F947933DDD60 /* StemCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2FB03DE5EA0D2E635AFF9D7 /* AudioIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7092CA304FE7C271C41C164 /* Build configuration list for PBXNativeTarget "AudioIntegrationTests" */;
+			buildPhases = (
+				390C79009A935759225B6C2A /* Sources */,
+				ED1AE5536404991566645F41 /* Frameworks */,
+				1E9459216557484BC1A83B55 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71F432511395B0A41B14F2DB /* PBXTargetDependency */,
+				58C629277783210827898002 /* PBXTargetDependency */,
+			);
+			name = AudioIntegrationTests;
+			packageProductDependencies = (
+			);
+			productName = AudioIntegrationTests;
+			productReference = EEADB1726655D92462D544FD /* AudioIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B115B16DCF0A0F20A4B2E704 /* StemCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CFE551A0B79C38223A273D /* Build configuration list for PBXNativeTarget "StemCoreTests" */;
+			buildPhases = (
+				BC018867B6C9C557C6C0A141 /* Sources */,
+				7D699DD6E87E16D5CC37F586 /* Frameworks */,
+				D3794A21DCC6CB3CF926CDFE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D301419083AD347AE10154D3 /* PBXTargetDependency */,
+			);
+			name = StemCoreTests;
+			packageProductDependencies = (
+			);
+			productName = StemCoreTests;
+			productReference = 19963F5FF7E9461F6CE1596E /* StemCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1D636DFE3D596ECCB941689 /* STEMBreaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA87F03EC65C0F40BBEEDEC /* Build configuration list for PBXNativeTarget "STEMBreaker" */;
+			buildPhases = (
+				ADEDF6CAA9FE9CED4E2031A0 /* Sources */,
+				0AA93A881459841EB4A21ACD /* Resources */,
+				1317A86915E30145C1C0B23F /* Frameworks */,
+				5FF5E20BD72E5D4FC2B0C420 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B4BDAC1C920DF309FF31CFD /* PBXTargetDependency */,
+			);
+			name = STEMBreaker;
+			packageProductDependencies = (
+			);
+			productName = STEMBreaker;
+			productReference = 0E225F78002D1C969D11FEBD /* STEMBreaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07E2473BDAA89E5BAD331A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					61B88741EC1811AD275E2C73 = {
+
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1D636DFE3D596ECCB941689;
+					};
+					9329CB791D1882EB841B7AB7 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					A2FB03DE5EA0D2E635AFF9D7 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					B115B16DCF0A0F20A4B2E704 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					C1D636DFE3D596ECCB941689 = {
+
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBCA2E77428F87A7095BB719 /* Build configuration list for PBXProject "STEMBreaker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 417441BE89A7F09EE6666BAA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D421FC863B1ED825DA27751B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9329CB791D1882EB841B7AB7 /* StemCore */,
+				C1D636DFE3D596ECCB941689 /* STEMBreaker */,
+				B115B16DCF0A0F20A4B2E704 /* StemCoreTests */,
+				61B88741EC1811AD275E2C73 /* STEMBreakerUITests */,
+				A2FB03DE5EA0D2E635AFF9D7 /* AudioIntegrationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AA93A881459841EB4A21ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79896FF9BAD0E8A8C006F38 /* Assets.xcassets in Resources */,
+				AF5A438C030513FF1B32B4B2 /* Demo in Resources */,
+				CD90BD2914E76E14856BE72B /* MODEL.md in Resources */,
+				A0096BDE08ECED59E5D768F7 /* Spleeter-LICENSE.txt in Resources */,
+				ED4B5F009605EC40532CBCA7 /* Spleeter2Model.mlmodelc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E5581A8FCA1DB06E2FF7E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02EA749BA2AD9C0B22F95C7 /* DemoFactory.swift in Sources */,
+				C68FB90A8DE9ED1BC16B17B5 /* InstrumentEstimator.swift in Sources */,
+				887CEBFFE968BF2FEE1F4E98 /* ShortTimeFourier.swift in Sources */,
+				ED6D0B6F3224E5C605DC51C2 /* StemSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390C79009A935759225B6C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F25E958381A39075BE552A /* AudioIntegrationTests.swift in Sources */,
+				738C3FDB696DDF489B00FB73 /* AudioSpectrumTests.swift in Sources */,
+				2925D13979C1CB4F54FB9278 /* MicrophoneSampleMailboxTests.swift in Sources */,
+				CA0F455AA804702521791DB0 /* SystemOutputAnalyzerTests.swift in Sources */,
+				A8432B5B97BD0782140239B4 /* VisualizationHistoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEDF6CAA9FE9CED4E2031A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA44AD8BAA092C8D554B63D2 /* AppleMusicBridge.swift in Sources */,
+				897ECBECBD1C9D1B6258F1C7 /* AudioImporter.swift in Sources */,
+				39C9D60A239B60503F74E86B /* AudioSpectrum.swift in Sources */,
+				4CCB6C2895A5D289E8E40C82 /* DeckStore.swift in Sources */,
+				0FE4CCF4D924011320A1E6B6 /* DemoLoader.swift in Sources */,
+				5CCE715D7CAE27007ED11E1F /* GuideView.swift in Sources */,
+				C28054802489AAFFE07BD55B /* InstrumentTheme.swift in Sources */,
+				6FD237313414187B093F273A /* InstrumentView.swift in Sources */,
+				977F7FDADF1F0A52A4E8A085 /* MicrophoneAnalyzer.swift in Sources */,
+				59535268F1FD9ABCAF8C3811 /* MusicLibraryView.swift in Sources */,
+				F773D38BF2685E0E94148FC7 /* RemixEngine.swift in Sources */,
+				8AA1656127DE76D5F6521DD3 /* STEMBreakerApp.swift in Sources */,
+				93A315A0789420F9B2C9C8F2 /* ScopeView.swift in Sources */,
+				489AA0905A05188A25638F11 /* SpleeterSeparator.swift in Sources */,
+				A683B18A304CA4BB5E607972 /* StemMixerView.swift in Sources */,
+				BC74B14BE20C887AB057C5D0 /* SystemOutputAnalyzer.swift in Sources */,
+				71F088DE4E6DF244061ED07D /* TransportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC018867B6C9C557C6C0A141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3382655685C9BFF13DCAF8EE /* StemCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0299AC69C9C06B1851FEF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A0A2E8E13AEECA8A56DC8B /* STEMBreakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58C629277783210827898002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9329CB791D1882EB841B7AB7 /* StemCore */;
+			targetProxy = 2578691F9AE5AF6A8555C319 /* PBXContainerItemProxy */;
+		};
+		6B4BDAC1C920DF309FF31CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9329CB791D1882EB841B7AB7 /* StemCore */;
+			targetProxy = 24E619B2E1D3A85B35835853 /* PBXContainerItemProxy */;
+		};
+		71F432511395B0A41B14F2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D636DFE3D596ECCB941689 /* STEMBreaker */;
+			targetProxy = 960C0F28F974AA3AA072EB76 /* PBXContainerItemProxy */;
+		};
+		93C2020DC34A22169754999E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D636DFE3D596ECCB941689 /* STEMBreaker */;
+			targetProxy = 136FD199CFDAE5D512160FDE /* PBXContainerItemProxy */;
+		};
+		D301419083AD347AE10154D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9329CB791D1882EB841B7AB7 /* StemCore */;
+			targetProxy = C26D2A03F9546005626FC449 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19FE3D28D38537197F970FFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.coretests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F21A6CDD100D075A53B45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.coretests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		410D6E241E4403671E84D0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STEMBreaker;
+			};
+			name = Release;
+		};
+		4FC5C6F3757ADA93A5A3D19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		524AA73A6B7F0A066C097C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.audiotests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STEMBreaker.app/STEMBreaker";
+			};
+			name = Debug;
+		};
+		55381215ADD70C5D571F943F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		975C2F2FC7E47EE23905E62A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A06B347FFADCE1BA800C44BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF8429306EEC69D7C4588B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D903944ED0DB47C2E8DA97C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STEMBreaker;
+			};
+			name = Debug;
+		};
+		DC31FA4070305AFD3C43E975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.stembreaker.audiotests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STEMBreaker.app/STEMBreaker";
+			};
+			name = Release;
+		};
+		E686A98E7358D3C5B74E2766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6021C8FD498B5A232A3B049A /* Build configuration list for PBXNativeTarget "STEMBreakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D903944ED0DB47C2E8DA97C4 /* Debug */,
+				410D6E241E4403671E84D0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6B92FF0118ACCC72027A9163 /* Build configuration list for PBXNativeTarget "StemCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975C2F2FC7E47EE23905E62A /* Debug */,
+				55381215ADD70C5D571F943F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8CA87F03EC65C0F40BBEEDEC /* Build configuration list for PBXNativeTarget "STEMBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8429306EEC69D7C4588B87 /* Debug */,
+				4FC5C6F3757ADA93A5A3D19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7092CA304FE7C271C41C164 /* Build configuration list for PBXNativeTarget "AudioIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524AA73A6B7F0A066C097C31 /* Debug */,
+				DC31FA4070305AFD3C43E975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7CFE551A0B79C38223A273D /* Build configuration list for PBXNativeTarget "StemCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE3D28D38537197F970FFF /* Debug */,
+				27F21A6CDD100D075A53B45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBCA2E77428F87A7095BB719 /* Build configuration list for PBXProject "STEMBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06B347FFADCE1BA800C44BA /* Debug */,
+				E686A98E7358D3C5B74E2766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07E2473BDAA89E5BAD331A59 /* Project object */;
+}
